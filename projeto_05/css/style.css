@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 
 html, body{
@@ -40,6 +43,7 @@ header nav.desktop ul li{
     float: left;
     font-size: 20px;
     padding-left: 3rem;
+    font-style: italic;
 }
 
 header nav.desktop a{
@@ -49,9 +53,7 @@ header nav.desktop a{
 
 section.banner{
     width: 100%;
-    height: 50vw;
-    min-height: 600px;
-    max-height: 800px;
+    height: 600px;
     background-color: #000;
     background-image: url('../imagens/bg.jpg');
     background-size: contain;
@@ -59,10 +61,104 @@ section.banner{
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 768px){
+.text-banner{
+    padding: 30px;
+}
+
+.text-banner-single{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 25px;
+    font-style: italic;
+    width: 314px;
+    height: 80px;
+    background-image: url('../imagens/box-text.png');
+    background-size: 100% 100%;
+    padding: 20px 40px;
+    text-transform: uppercase;
+}
+
+.email-banner{
+    background-image: url('../imagens/box-white-text.png');
+    background-size:100% 100%;
+    width: 230px;
+    height: 60px;
+    font-style: italic;
+    font-size: 19px;
+    padding: 20px 15px;
+    margin-top: 30px;
+    position: relative;
+    left: -27px;
+}
+
+.text-banner .text-banner-single:nth-of-type(1){
+    width: 300px;
+    position: relative;
+    left: -1px;
+}
+
+.text-banner .text-banner-single:nth-of-type(2){
+    width: 270px;
+    position: relative;
+    left: -10px;
+}
+
+.text-banner .text-banner-single:nth-of-type(3){
+    width: 240px;
+    position: relative;
+    left: -18px;
+}
+
+
+@media screen and (max-width: 1140px){
+    section.banner{
+        background-size: 90% auto;
+        background-position: 200% 100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
     section.banner{
     height: 70vw;
     min-height: 0;
-    max-height: 800px;
+    max-height: 500px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    nav.desktop{
+        display: none;
+    }
+
+    .text-banner-single{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .email-banner{
+        left: -6px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .text-banner{
+        padding: 30px;
+    }
+    
+    .text-banner-single{
+        margin-top: 10px;
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+        padding: 8px 40px;
+    }
+    
+    .email-banner{
+        width: 200px;
+        height: 50px;
+        font-size: 15px;
+        padding: 8px 25px;
+        margin-top: 10px;
+        left: -3px;
     }
 }
