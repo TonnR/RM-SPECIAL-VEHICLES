@@ -35,6 +35,40 @@ header nav.desktop{
     top: 40px;
 }
 
+nav.mobile{
+    margin-top: 40px;
+    display: none;
+    float: right;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-image: url('../imagens/icon_menu.png');
+    background-size: 100% 100%;
+}
+
+nav.mobile ul{
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 110px;
+    z-index: 999;
+    border-bottom: 3px solid #eb2d2d;
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+}
+
+nav.mobile li{
+    font-size: 23px;
+    padding: 20px 0;
+    font-style: italic;
+}
+
+nav.mobile li a{
+    text-decoration: none;
+    color: #000;
+}
+
 header nav.desktop ul{
     list-style-type: none;
 }
@@ -52,6 +86,7 @@ header nav.desktop a{
 }
 
 section.banner{
+    overflow: hidden;
     width: 100%;
     height: 600px;
     background-color: #000;
@@ -66,7 +101,8 @@ section.banner{
 }
 
 .text-banner-single{
-    margin-top: 20px;
+    cursor: pointer;
+    margin-top: 50px;
     color: #fff;
     font-size: 25px;
     font-style: italic;
@@ -76,19 +112,6 @@ section.banner{
     background-size: 100% 100%;
     padding: 20px 40px;
     text-transform: uppercase;
-}
-
-.email-banner{
-    background-image: url('../imagens/box-white-text.png');
-    background-size:100% 100%;
-    width: 230px;
-    height: 60px;
-    font-style: italic;
-    font-size: 19px;
-    padding: 20px 15px;
-    margin-top: 30px;
-    position: relative;
-    left: -27px;
 }
 
 .text-banner .text-banner-single:nth-of-type(1){
@@ -109,7 +132,78 @@ section.banner{
     left: -18px;
 }
 
+.veiculos-destaque{
+    padding: 90px 2%;
+}
 
+section.veiculos-destaque .container{
+    padding: 40px 0;
+    max-width: 1000px;
+}
+
+.line-titulo{
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ln1{
+    position: absolute;
+    top: 22px;
+    height: 2px;
+    width: 100%;
+    background: #000
+}
+
+.veiculos-destaque > .line-titulo > h2{
+    position: relative;
+    background: #fff;
+    display: inline-block;
+    padding: 0 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.vitrine-carros{
+    float: left;
+    width: 33.3%;
+    padding: 0 30px;
+}
+
+.vitrine-carros .cars{
+    width: 100%;
+    padding-top: 100%;
+    background-size: 100% 100%;
+}
+.vitrine-carros h2{
+    font-size: 20px;
+    font-style: italic;
+    padding: 10px 0;
+}
+
+.vitrine-carros p{
+    color: #353535;
+    font-style: italic;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.vitrine-carros a{
+    font-style: italic;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #eb2d2d;
+    text-decoration: none;
+    line-height: 30px;
+    display: block;
+    padding: 20px;
+    text-transform: uppercase;
+    box-shadow: -1px 2px 8px 1px #000;
+}
 @media screen and (max-width: 1140px){
     section.banner{
         background-size: 90% auto;
@@ -130,14 +224,15 @@ section.banner{
         display: none;
     }
 
+    nav.mobile{
+        display: block;
+    }
+
     .text-banner-single{
         margin-top: 10px;
         margin-left: 20px;
     }
-    .email-banner{
-        left: -6px;
-        margin-top: 15px;
-    }
+  
 }
 
 @media screen and (max-width: 580px){
@@ -153,12 +248,15 @@ section.banner{
         padding: 8px 40px;
     }
     
-    .email-banner{
-        width: 200px;
-        height: 50px;
-        font-size: 15px;
-        padding: 8px 25px;
-        margin-top: 10px;
-        left: -3px;
+
+    section.veiculos-destaque .container{
+       text-align: center;
+    }
+
+    .vitrine-carros{
+        float: none;
+        width: 60%;
+        display: inline-block;
+        padding: 10px;
     }
 }
