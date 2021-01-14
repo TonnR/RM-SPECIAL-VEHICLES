@@ -85,6 +85,11 @@ header nav.desktop a{
     color: #000;
 }
 
+.desktop ul li a:hover{
+        color: #eb2d2d;
+    }
+
+
 section.banner{
     overflow: hidden;
     width: 100%;
@@ -204,6 +209,108 @@ section.veiculos-destaque .container{
     text-transform: uppercase;
     box-shadow: -1px 2px 8px 1px #000;
 }
+
+.vitrine-carros a:hover{
+    background-color: #eb8034;
+    transform: scale(1.1,1.1);
+}
+
+.servicos-descricao{
+    display: flex;
+}
+
+.half1{
+    width: 50%;
+    padding: 90px 0;
+    background-color: #242424;
+    color: #fff;
+}
+
+.half1-wraper{
+    float: right;
+    padding-right: 20%;
+}
+
+.half1-wraper h2{
+    font-weight: normal;
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.half1-wraper ul{
+    list-style-position: inside;
+    display: inline-block;
+}
+
+.half1-wraper li{
+    padding: 10px 0;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.half1-wraper a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    background-color: #ed2b2b;
+    box-shadow: -1px 2px 8px 1px #fff;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 35px;
+    text-align: center;
+}
+
+.half1-wraper a:hover{
+    background-color: #eb8034;
+    transform: scale(1.1,1.1);
+}
+
+.half-2{
+    width: 50%;
+    padding: 90px 100px;
+    background-color: #ed2b2b;
+    color: #fff;
+}
+
+.half-2 h2{
+    font-weight: normal;
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.half-2 .depoimentos-single{
+    margin-top: 20px;
+}
+
+.half-2 .depoimentos-single p{
+    font-size: 19px;
+}
+
+.navigation{
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    max-width: 540px;
+}
+
+.arrows{
+    float: left;
+}
+
+.navigation img{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.nome-depoimento{
+    margin-right: 35px;
+    float: right;
+    color: #000;
+    font-size: 24px;
+}
+
 @media screen and (max-width: 1140px){
     section.banner{
         background-size: 90% auto;
@@ -219,9 +326,26 @@ section.veiculos-destaque .container{
     }
 }
 
+@media screen and (max-width: 910px){
+    .half1-wraper a{
+       display: block;
+       margin-left: 0;
+       margin-top: 20px;
+    }
+}
+
 @media screen and (max-width: 720px){
+
+    section .servicos-descricao{
+        flex-direction: column;
+    }
+
+    .half1, .half-2{
+        width: 100%;
+    }
     nav.desktop{
         display: none;
+        text-align: center;
     }
 
     nav.mobile{
@@ -258,5 +382,21 @@ section.veiculos-destaque .container{
         width: 60%;
         display: inline-block;
         padding: 10px;
+    }
+    .half1-wraper a{
+        display: block;
+        margin-left: 15%;
+        margin-top: 20px;
+     }
+     .half1-wraper li{
+        font-size: 16px;
+    }
+    .half1, .half-2{
+        width: 100%;
+        text-align: left;
+        padding:  1rem;
+    }
+    section .servicos-descricao{
+        flex-direction: column;
     }
 }
