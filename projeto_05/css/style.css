@@ -13,7 +13,7 @@ html, body{
 
 .container{
     width: 100%;
-    max-width: 1140px;
+    max-width: 970px;
     margin: 0 auto;
 }
 
@@ -286,6 +286,7 @@ section.veiculos-destaque .container{
 
 .half-2 .depoimentos-single p{
     font-size: 19px;
+    max-width: 420px;
 }
 
 .navigation{
@@ -305,7 +306,7 @@ section.veiculos-destaque .container{
 }
 
 .nome-depoimento{
-    margin-right: 35px;
+    margin-right: 50px;
     float: right;
     color: #000;
     font-size: 24px;
@@ -401,12 +402,105 @@ footer p{
     font-style: italic;
 }
 
+footer ul li a:hover{
+    color: #eb2d2d;
+}
+
+section.venda{
+    min-height: 80%;
+    padding: 90px 0;
+}
+
+.content-venda{
+    margin-top: 40px;
+}
+
+.sidebar{
+    float: left;
+    width: 30%;
+}
+
+.search1{
+    width: 300px;
+}
+
+.search1 h2{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.search1 .barra-preco{
+    width: 100%;
+    height: 22px;
+    margin-top: 8px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    position: relative;
+}
+
+.barra-preco-fill{
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 20px;
+    background-color: #cccc;
+}
+
+.pointer-barra{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    left: 10%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: gray;
+    cursor: pointer;
+
+}
+
+.valor-pesquisa{
+    margin-top: 8px;
+}
+
+.valor-pesquisa p:nth-of-type(1){
+    float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2){
+    float: right;
+}
+
+.search2{
+    margin-top: 40px;
+}
+
+.search2 h2{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.form-venda-wraper{
+    margin-top: 10px;
+}
+
+.form-venda-wraper input[type = "checkbox"]{
+    cursor: pointer;
+}
+
+.form-venda-wraper span{
+    padding: 0 10px;
+}
+
 @media screen and (max-width: 1140px){
     section.banner{
         background-size: 90% auto;
         background-position: 200% 100%;
     }
 }
+
 
 @media screen and (max-width: 1024px){
     section.banner{
